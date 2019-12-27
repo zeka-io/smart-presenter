@@ -1,0 +1,53 @@
+.canvasbox {
+    border-radius: 3px;
+    margin-right: 10px;
+    border-bottom: 3px solid #0063FF;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+    background-size: cover;
+    position: absolute;
+    width: 640px;
+    height: 480px;
+}
+
+.block {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.pointer {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 999999;
+    transition-duration: 0.1s;
+    visibility: hidden;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+.featureSelectWrapper {
+    width: 100%;
+    color: white;
+    flex-direction: row;
+    display: flex;
+}
+
+.isReady {
+    color: green;
+    visibility: hidden;
+    margin-left: 20px;
+}
+
+input {
+    margin-left: 20px;
+}

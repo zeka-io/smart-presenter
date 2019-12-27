@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/default.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- ML5 library -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+		<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/handtrackjs@latest/dist/handtrack.min.js"> </script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="featureSelectWrapper">
+			<input type="radio" name="feature" value="handDetection" onclick="changedFeature(this)">Hand Detection<br>
+			<input type="radio" name="feature" value="soundClassification" checked="checked" onclick="changedFeature(this)">Sound Classification<br>
+			<input type="radio" name="feature" value="imageClassification" id="imageClassification" onclick="changedFeature(this)">Image Classification<br>
+			<div class="isReady" id="isReady">READY</div>
+		</div>
+		<div style="height: 0px; width:0px; border: 5px solid #6A1520; border-radius: 20%; z-index:11; position:absolute" id="rect"></div>
+		<video class="videobox canvasbox hidden" autoplay="autoplay" id="myvideo" style="-webkit-transform: scaleX(-1); transform: scaleX(-1);"></video>
+		<div class="pointer" id="pointer"></div>
+		<div class="reveal">
+			<div class="slides">
+				<section id="slide1">Slide 1</section>
+				<section>
+					<section>Slide 2 - 1</section>
+					<section>Slide 2 - 2</section>
+				</section>
+				<section>Slide 3</section>
+				<section>
+					<section>Slide 4 - 1</section>
+					<section>Slide 4 - 2</section>
+					<section>Slide 4 - 3</section>
+				</section>
+				<section>Slide 5</section>
+				<section>
+					<section>Slide 6 - 1</section>
+					<section>Slide 6 - 2</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+		<script src="./js/soundClassification.js"></script>
+		<script src="./js/handTrack.js"></script>
+		<script src="./js/imageClassification.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
