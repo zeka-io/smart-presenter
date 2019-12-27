@@ -1,5 +1,5 @@
 
-# smart-presenter 
+# Smart Presenter ![start with why](https://img.shields.io/badge/SMART-PRESENTER-brightgreen.svg?style=flat)
   
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://sunucu.zeka.io).
@@ -20,6 +20,8 @@ Smart-presenter is a customized version of  [reveal.js](https://github.com/hakim
 
 -  [Instructions](#instructions)
 
+-  [Contributors](#contributors)
+
 -  [License](#license)
 
   
@@ -32,11 +34,11 @@ Some smart-presenter features, like hand detection, sound classification, and im
 
   
 
-1. Install [Node.js](http://nodejs.org/) (4.0.0 or later)
+1. Install [Node.js](http://nodejs.org/) (4.0.0 or later) 
 
   
 
-1. Clone the smart-presenter repository
+3. Clone the smart-presenter repository
 
 ```sh
 
@@ -84,7 +86,7 @@ You can change the port by using `npm start -- --port=8001`.
 
   
 
-### Folder Structure
+## Folder Structure
 
   
 
@@ -101,10 +103,24 @@ You can change the port by using `npm start -- --port=8001`.
 
   
 
-### ToDo
+### Hand Detection
 
   ToDo
   
+### Sound Classification
+
+  ToDo
+  
+### Image Classification
+
+  ToDo
+
+## Contributors
+
+- [Abdurrahman CÜCE](https://github.com/abdurrahmancuce)
+- [Ulaş Kılış](https://github.com/ulaskilic)
+- [Cansu AL](https://github.com/cansual)
+- [İzni Burak Demirtaş](https://github.com/izniburak)
   
 ## License
 
