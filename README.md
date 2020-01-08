@@ -29,6 +29,15 @@ Smart-presenter is a customized version of  [reveal.js](https://github.com/hakim
 ## Installation
 
   
+### Docker
+
+Running application inside docker container:
+```sh
+docker-compose up -d
+```
+Container is using port `9000`. You can modify it in `docker-compose.yml`. Do not forget `--build` flag after configuration changes. 
+
+### Nodejs
 
 Some smart-presenter features, like hand detection, sound classification, and image classification, require that presentations run from a local webserver. The following instructions will set up such a server as well as all of the development tasks needed to make edits to the smart-presenter source code.
 
